@@ -1,5 +1,5 @@
 {
-  "name": "websiteSvr",
+  "name": "websiteWebSvr",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=dev nodemon index.js",
     "gulp": "cross-env NODE_ENV=dev gulp start",
-    "start": "cross-env NODE_ENV=production pm2 start index --watch -n websiteSvr"
+    "start": "pm2 start index.js -n websiteWebSvr -e ./logs/err.log -o ./logs/out.log"
   },
   "author": "",
   "license": "ISC",
