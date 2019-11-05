@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>关于我们</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+	<link rel="alternate icon" type="/assets/img/hengwang-1.png" href="/assets/img/hengwang-1.png">
+	<link rel="stylesheet" href="/assets/css/amazeui.css" />
+	<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+	<%- include("include/header.html") %>
+	<div class="toppic">
+		<div class="am-container-1">
+			<div class="toppic-title left">
+				<i class="am-icon-paper-plane toppic-title-i"></i>
+				<span class="toppic-title-span">关于我们</span>
+				<p>About Us</p>
+			</div>
+			<div class="right toppic-progress">
+				<span><a href="/" class="w-white">首页</a></span>
+				<i class=" am-icon-arrow-circle-right w-white"></i>
+				<span><a href="/about/" class="w-white">关于我们</a></span>
+			</div>
+		</div>
+	</div>
+
+	<div class=" am-container-1">
+		<div class="part-title part-title-mar">
+			<a href="#">
+				<i class=" am-icon-paper-plane part-title-i"></i>
+				<span class="part-title-span">关于</span>
+				<p>About</p>
+			</a>
+		</div>
+		<div class="company-intro">
+			<p>
+				深圳市橙子网络文化工作室是一家致力于提供一整套互联网解决方案和创新型技术服务公司。致力于高品质网站建设、平台系统建设、门户网站开发、应用系统开发、网站策划运营。从策划、信息架构设计、视觉设计到前后端技术开发，根据客户的需求，提供完整的，高度定制的互联网服务解决方案。
+			</p>
+		</div>
+	</div>
+	<div class="gray-li company-thought-all">
+		<div class=" am-container-1">
+			<ul class="company-thought">
+				<li>
+					<div class="thought-all">
+						<i class="am-icon-circle-o-notch"></i>
+						<span>企业理念</span>
+						<div class="thought-all-none">
+							<h5>专注 专业</h5>
+						</div>
+					</div>
+
+				</li>
+				<li>
+					<div class="thought-all">
+						<i class="am-icon-hand-o-right"></i>
+						<span>服务理念</span>
+						<div class="thought-all-none">
+							<h5>实务 用心</h5>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thought-all">
+						<i class="am-icon-bar-chart"></i>
+						<span>发展方向</span>
+						<div class="thought-all-none">
+							<h5>精益求精</h5>
+						</div>
+					</div>
+				</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<div class=" am-container-1">
+		<div class="part-title part-title-mar">
+			<a href="#">
+				<i class=" am-icon-home part-title-i"></i>
+				<span class="part-title-span">办公环境</span>
+				<p>Office Space</p>
+			</a>
+		</div>
+		<div class="office-space">
+			<div class="cam-u-lg-6 am-u-md-6 am-u-sm-12">
+				<img src="/assets/img/space-1.png" />
+			</div>
+			<div class="cam-u-lg-3 am-u-md-3 am-u-sm-6">
+				<img src="/assets/img/space-2.png" />
+			</div>
+			<div class="cam-u-lg-3 am-u-md-3 am-u-sm-6">
+				<img src="/assets/img/space-3.png" />
+			</div>
+			<div class="cam-u-lg-3 am-u-md-3 am-u-sm-6">
+				<img src="/assets/img/space-4.png" />
+			</div>
+			<div class="cam-u-lg-3 am-u-md-3 am-u-sm-6">
+				<img src="/assets/img/space-5.png" />
+			</div>
+			<div class="clear"></div>
+		</div>
+
+	</div>
+	</div>
+	<div class=" am-container-1">
+		<div class="part-title part-title-mar">
+			<a href="#">
+				<i class=" am-icon-comments-o part-title-i"></i>
+				<span class="part-title-span">联系我们</span>
+				<p>Contact Us</p>
+			</a>
+		</div>
+	</div>
+	<div class="gray-li">
+		<div class=" am-container-1">
+			<div class="contact-us">
+				<div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
+					<!-- <img src="/assets/img/map.png" /> -->
+				</div>
+				<div class="am-u-lg-6 am-u-md-6 am-u-sm-12 text-center">
+					<ul class="contact-add">
+						<li>
+							<div><i class=" am-icon-map-marker"></i><span
+									class="contact-add-1"><%= websiteData.configs.contract_address %></span></div>
+						</li>
+
+						<li>
+							<div><i class=" am-icon-mobile mobile"></i><span><%= websiteData.configs.contract_phone %></span></div>
+						</li>
+						<li>
+							<div><i class=" am-icon-envelope-o"></i><span><%= websiteData.configs.contract_email %></span></div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<%- include("include/footer.html") %>
+
+
+</body>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets//assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/amazeui.min.js"></script>
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+</html>

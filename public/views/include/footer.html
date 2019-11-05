@@ -1,0 +1,28 @@
+<footer class="footer ">
+
+  <ul>
+
+    <li class="am-u-lg-4 am-u-md-4 am-u-sm-12 part-5-li2">
+      <div class="part-5-title">联系我们</div>
+      <div class="part-5-words2">
+        <span><%= websiteData.configs.contract_address %></span>
+        <span><%= websiteData.configs.contract_email %></span>
+        <span><i class="am-icon-phone"></i><em><%= websiteData.configs.contract_phone %></em></span>
+      </div>
+    </li>
+    <li class="am-u-lg-4 am-u-md-4 am-u-sm-12 ">
+      <div class="part-5-title">相关链接</div>
+      <div class="part-5-words2">
+        <ul class="part-5-words2-ul">
+          <% categorys.forEach(item => { %>
+          <li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="<%= item.url %>"><%= item.title %></a></li>
+          <% }) %>
+
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </li>
+    <div class="clear"></div>
+  </ul>
+
+</footer>
